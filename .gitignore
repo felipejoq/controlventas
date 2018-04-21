@@ -29,6 +29,9 @@ test-results/
 Thumbs.db
 .vs/
 
+ControlVentas.csproj
+ControlVentas.sln
+
 # Mac bundle stuff
 *.dmg
 *.app

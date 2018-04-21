@@ -6,7 +6,9 @@ namespace ControlVentas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Usuario u = new Usuario(1, "11.111.111-1", "123");
+            Usuario.addUsers(u);
+            Usuario.seeUsers();
         }
     }
 }
