@@ -11,7 +11,7 @@ namespace ControlVentas.Models
         private int _id;
         private string _rut;
         private string _password;
-        private static List<Usuario> _listaUsuarios = new List<Usuario>();
+        private static readonly List<Usuario> _listaUsuarios = new List<Usuario>();
 
         public Usuario(int id, string rut, string password)
         {
