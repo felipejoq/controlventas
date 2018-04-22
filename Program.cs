@@ -6,9 +6,9 @@ namespace ControlVentas
     {
         static void Main(string[] args)
         {
-            Usuario u = new Usuario(1, "11.111.111-1", "123");
-            Usuario.addUsers(u);
-            Usuario.seeUsers();
+            ControlVentas.Models.Administrador administrador = new Models.Administrador(1, "11.111.111-1", "123", true);
+            ControlVentas.Models.Administrador.AddAdmins(administrador);
+            ControlVentas.Models.Administrador.SeeAdmins();
         }
     }
 }

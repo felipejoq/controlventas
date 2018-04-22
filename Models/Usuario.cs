@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 namespace ControlVentas.Models
 {
-    public class User
+    public class Usuario
     {
-        public User()
+        public Usuario()
         {
         }
-            private int _id;
+
+        private int _id;
         private string _rut;
         private string _password;
-        private static List<User> _listaUsuarios = new List<User>();
+        private static List<Usuario> _listaUsuarios = new List<Usuario>();
 
-        public User(int id, string rut, string password)
+        public Usuario(int id, string rut, string password)
         {
             this._id = id;
             this._rut = rut;
@@ -37,7 +38,7 @@ namespace ControlVentas.Models
             set { this._password = value; }
         }
 
-        public static void AddUsers(User usuario)
+        public static void AddUsers(Usuario usuario)
         {
             _listaUsuarios.Add(usuario);
         }
@@ -45,7 +46,7 @@ namespace ControlVentas.Models
         public static void SeeUsers()
         {
             Console.WriteLine("\n***** Lista de usuarios *****");
-            foreach (User user in _listaUsuarios)
+            foreach (Usuario user in _listaUsuarios)
             {
                 Console.WriteLine(user.Id + "). Rut: " + user.Rut + " password: " + user.Password);
             }
